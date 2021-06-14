@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-          Title="MainWindow" Height="500" Width="400" WindowStyle="None" WindowStartupLocation="CenterScreen" >
+          Title="MainWindow" Height="500" Width="400" WindowStyle="None" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" >
     <Window.Background>
-        <ImageBrush/>
+        <ImageBrush ImageSource="Login.jpg"/>
     </Window.Background>
     <Grid>
         <Grid Margin="0,0,-0.4,-0.4">
@@ -15,34 +15,38 @@
                 <ImageBrush/>
             </Grid.Background>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="0.5*"/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-
-            <TextBlock Text="Sign in" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Harlow Solid Italic" Margin="113,104,112,47">
-                <TextBlock.Background>
-                    <ImageBrush/>
-                </TextBlock.Background>
-            </TextBlock>
-            <StackPanel Grid.Row="1" Margin="30 0">
-                <TextBlock Text="Email"/>
-                <TextBox x:Name="Email" Background="Transparent" BorderBrush="#FFCDE4F9"/>
+            <TextBlock Text="Sign in" HorizontalAlignment="Center" Grid.Row="0" FontSize="60" Margin="39,75,172,42.2" FontFamily="Arial" Foreground="#FF536C6F" Background="Transparent"/>
+            <StackPanel Grid.Row="1" Margin="30,0.6,30,103" Grid.RowSpan="2">
+                <TextBlock Text="Username" Margin="0,0,137,0" FontFamily="Arial"/>
+                <TextBox x:Name="Username" Background="Transparent" BorderBrush="#FFCDE4F9" Margin="0,0,137,0" FontFamily="Arial"/>
             </StackPanel>
-            <StackPanel x:Name="Password" Grid.Row="2" Margin="30 0">
-                <TextBlock Text="Password"/>
-                <PasswordBox x:Name="PasswordBox" Background="Transparent" BorderBrush="#FFCDE4F9"/>
-                <TextBox Name="passwordTxtBox" Visibility="Collapsed"/>
-                <CheckBox x:Name="Check_Password" Margin="0,0,4.6,5" Content="Show Password" HorizontalAlignment="Right" Width="324"
-                             Unchecked="ShowPassword_Unchecked"  Checked="ShowPassword_Checked" IsChecked="False">
-                    <CheckBox.ContextMenu>
-                        <ContextMenu/>
-                    </CheckBox.ContextMenu>
+            <StackPanel x:Name="Password" Grid.Row="1" Margin="30,61.6,30,0" Grid.RowSpan="2">
+                <TextBlock Text="Password" Margin="0,0,137,0" FontFamily="Arial"/>
+                <PasswordBox x:Name="PasswordBox" Background="Transparent" BorderBrush="#FFCDE4F9" Margin="0,0,137,0" FontFamily="Arial"/>
+                <TextBox Name="passwordTxtBox" Margin="0,0,136.6,5" Visibility="Collapsed" FontFamily="Arial"/>
+                <CheckBox x:Name="Check_Password" Margin="7,0,136.6,5" Content="Show Password"
+                          Unchecked="ShowPassword_Unchecked"  Checked="ShowPassword_Checked" IsChecked="False" Height="14" FontFamily="Arial">
+                    <CheckBox.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Transparent"/>
+                        </LinearGradientBrush>
+                    </CheckBox.Background>
                 </CheckBox>
             </StackPanel>
-            <Button x:Name="Login" Grid.Row="4" Content="Login" VerticalAlignment="Top" Padding="0 10" Margin="30 0" Background="Transparent"/>
-            
+            <Button x:Name="Login" Grid.Row="3" Content="Login" VerticalAlignment="Top" Padding="0 10" Margin="30,0.8,165,0" Grid.RowSpan="2" FontFamily="Arial" Background="Transparent"/>
+
+            <TextBlock Grid.Row="4" Margin="30,35.6,165,-23.4" HorizontalAlignment="Center" FontFamily="Arial" Width="199">
+                <Run Text="  Not registered? "/>
+                <Hyperlink Click="Request">
+                    <Run Text="Create an account!"/>
+                </Hyperlink>
+            </TextBlock>
         </Grid>
     </Grid>
 </Window>

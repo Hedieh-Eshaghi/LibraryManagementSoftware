@@ -10,6 +10,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        private void Request(object sender, RoutedEventArgs e)
+        {
+            MembershipPage membership = new MembershipPage();
+            membership.Show();
+            this.Close();
+        }
         private void ShowPassword_Checked(object sender, RoutedEventArgs e)
         {
             passwordTxtBox.Text = PasswordBox.Password;
