@@ -22,12 +22,15 @@
         </Border>
         <Border Visibility="Collapsed" Grid.Column="1" Margin="2" Background="WhiteSmoke" HorizontalAlignment="Stretch" Name="EmploeePanel"  BorderThickness="2" BorderBrush="Gray">
             <DockPanel>
-                <Button Margin="200,500,50,50" Background="Bisque" Height="30" Name="btnAddEmploee" Width="150" >Add Emploee</Button>
-                <Button Margin="50,500,0,50" Background="Bisque" Name="btnEliminateEmployee" Width="150" Height="30">Eliminate Employee</Button>
-                <Button Margin="50,500,50,50" Background="Bisque" Name="btnDeposit" Width="150" Height="30">Deposit of salaries</Button>
+                <Button Margin="200,500,50,50" Background="Bisque" Height="30" Name="btnAddEmploee" Width="150" Click="btnAddEmploee_Click" >Add Employee</Button>
+                <Button Margin="50,500,0,50" Background="Bisque" Name="btnEliminateEmployee" Width="150" Height="30" Click="btnEliminateEmployee_Click">Eliminate Employee</Button>
+                <Button Margin="50,500,50,50" Background="Bisque" Name="btnDeposit" Width="150" Height="30" Click="btnDeposit_Click">Deposit of salaries</Button>
             </DockPanel>
            
 
+        </Border>
+        <Border Visibility="Collapsed" Grid.Column="1" Margin="2" Background="WhiteSmoke" HorizontalAlignment="Stretch" Name="BooksPanel"  BorderThickness="2" BorderBrush="Gray" >
+            <Button Name="btnAddBook" Height="30" Width="150" Margin="600,550,50,50" Background="Bisque" Click="btnAddBook_Click">Add Book</Button>
         </Border>
 
     </Grid>

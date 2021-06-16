@@ -27,14 +27,36 @@ namespace WpfApp1
         private void btnEmployees_Click(object sender, RoutedEventArgs e)
         {
             EmploeePanel.Visibility = Visibility.Visible;
+            BooksPanel.Visibility = Visibility.Collapsed;
         }
 
         private void btnBooks_Click(object sender, RoutedEventArgs e)
         {
-
+            EmploeePanel.Visibility = Visibility.Collapsed;
+            BooksPanel.Visibility = Visibility.Visible;
         }
 
         private void btnMoneyBank_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddBook_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddEmploee_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEliminateEmployee_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDeposit_Click(object sender, RoutedEventArgs e)
         {
 
         }
