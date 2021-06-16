@@ -32,6 +32,14 @@
         <Border Visibility="Collapsed" Grid.Column="1" Margin="2" Background="WhiteSmoke" HorizontalAlignment="Stretch" Name="BooksPanel"  BorderThickness="2" BorderBrush="Gray" >
             <Button Name="btnAddBook" Height="30" Width="150" Margin="600,550,50,50" Background="Bisque" Click="btnAddBook_Click">Add Book</Button>
         </Border>
+        <Border Visibility="Collapsed" Grid.Column="1" Margin="2" Background="WhiteSmoke" HorizontalAlignment="Stretch" Name="MeneyBankPanel"  BorderThickness="2" BorderBrush="Gray" >
+            <StackPanel Width="420" Height="200" Grid.Row="3" Margin="30 0">
+                <TextBlock FontSize="30" Text="increase money"/>
+                <TextBox Width="420" Height="30"  x:Name="Phone" Background="White" BorderBrush="LightGreen"/>
+                <Button FontSize="25" FontStyle="Italic" FontWeight="Heavy" Height="50" Width="420" Margin="20" Background="LightGreen">Confirm</Button>
+            </StackPanel>
+        </Border>
+        
 
     </Grid>
 </Window>

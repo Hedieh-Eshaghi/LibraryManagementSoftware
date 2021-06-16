@@ -28,17 +28,21 @@ namespace WpfApp1
         {
             EmploeePanel.Visibility = Visibility.Visible;
             BooksPanel.Visibility = Visibility.Collapsed;
+            MeneyBankPanel.Visibility = Visibility.Collapsed;
         }
 
         private void btnBooks_Click(object sender, RoutedEventArgs e)
         {
             EmploeePanel.Visibility = Visibility.Collapsed;
             BooksPanel.Visibility = Visibility.Visible;
+            MeneyBankPanel.Visibility = Visibility.Collapsed;
         }
 
         private void btnMoneyBank_Click(object sender, RoutedEventArgs e)
         {
-
+            EmploeePanel.Visibility = Visibility.Collapsed;
+            BooksPanel.Visibility = Visibility.Collapsed;
+            MeneyBankPanel.Visibility = Visibility.Visible;
         }
 
         private void btnAddBook_Click(object sender, RoutedEventArgs e)
