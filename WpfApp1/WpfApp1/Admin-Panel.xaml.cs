@@ -64,5 +64,10 @@ namespace WpfApp1
         {
 
         }
+
+        private void Border_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
     }
 }
