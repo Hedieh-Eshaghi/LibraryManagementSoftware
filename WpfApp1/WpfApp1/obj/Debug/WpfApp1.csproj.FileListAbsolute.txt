@@ -51,3 +51,5 @@ C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
 C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
 C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
 C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\Employees-Panel.g.cs
+C:\Users\hedieh\Desktop\AP-Project\WpfApp1\WpfApp1\obj\Debug\Employees-Panel.baml

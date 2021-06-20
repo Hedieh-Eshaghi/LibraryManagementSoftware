@@ -9,6 +9,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
         private void Request(object sender, RoutedEventArgs e)
         {
