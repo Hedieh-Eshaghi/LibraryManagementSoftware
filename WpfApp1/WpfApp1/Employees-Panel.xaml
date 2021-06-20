@@ -28,8 +28,13 @@
                 <Button Margin="50,500,0,50" Background="Bisque" Name="btnBorrowedBooks" Width="150" Height="30" Click="btnBorrowedBooks_Click">Borrowed Books</Button>
                 <Button Margin="50,500,50,50" Background="Bisque" Name="btnAvailableBooks" Width="150" Height="30" Click="btnAvailableBooks_Click">Available Books</Button>
             </DockPanel>
-
-
+        </Border>
+        <Border Visibility="Collapsed" Grid.Column="1" Margin="2" Background="WhiteSmoke" HorizontalAlignment="Stretch" Name="MembersOption"  BorderThickness="2" BorderBrush="Gray">
+            <DockPanel>
+                <Button Margin="15,500,20,50" Background="Bisque" Height="30" Name="btnAllMembers" Width="260" Click="btnAllMembers_Click" >All Members</Button>
+                <Button Margin="15,500,20,50" Background="Bisque" Name="btnDeleyBooks" Width="260" Height="30" Click="btnDeleydBooks_Click">Delayed members(for returning book)</Button>
+                <Button Margin="15,500,20,50" Background="Bisque" Name="btnDeleyPay" Width="260" Height="30" Click="btnDeleyPay_Click">Delayed members(for pay monthly subscription)</Button>
+            </DockPanel>
         </Border>
 
 

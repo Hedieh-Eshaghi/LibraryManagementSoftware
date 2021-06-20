@@ -26,10 +26,12 @@ namespace WpfApp1
         private void btnBooks_Click(object sender, RoutedEventArgs e)
         {
             BooksPanel.Visibility = Visibility.Visible;
+            MembersOption.Visibility = Visibility.Collapsed;
         }
         private void btnMembers_Click(object sender, RoutedEventArgs e)
         {
-
+            BooksPanel.Visibility = Visibility.Collapsed;
+            MembersOption.Visibility = Visibility.Visible;
         }
         private void btnWallet_Click(object sender, RoutedEventArgs e)
         {
@@ -48,6 +50,18 @@ namespace WpfApp1
 
         }
         private void btnAvailableBooks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnAllMembers_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnDeleydBooks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnDeleyPay_Click(object sender, RoutedEventArgs e)
         {
 
         }
