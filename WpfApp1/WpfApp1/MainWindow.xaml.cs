@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-
 namespace WpfApp1
 {
     public partial class MainWindow : Window

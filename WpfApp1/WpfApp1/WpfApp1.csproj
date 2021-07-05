@@ -105,6 +105,7 @@
     <Resource Include="Login.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Background.png" />
     <Content Include="CameraLogo.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,9 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MembershipPage" Height="500" Width="400" WindowStyle="None" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" >
+        Title="MembershipPage" Height="500" Width="400" WindowStyle="None" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+    <Window.Background>
+        <ImageBrush ImageSource="Background.png"/>
+    </Window.Background>
     <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
         <Grid Margin="0,0,-0.4,-0.4">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="0.5*"/>
@@ -18,38 +27,42 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Image Name="Photo" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image.Clip>
-                    <EllipseGeometry RadiusX="70" RadiusY="70" Center="100 75"/>
-                </Image.Clip>
-            </Image>
-
-            <Button Height="23" HorizontalAlignment="Left" Margin="12,0,0,34" Name="btnLoad" VerticalAlignment="Bottom" Width="75" Click="LoadPicture_Click">
-                _Load
-            </Button>
+            <StackPanel Grid.Row = "0">
+                <WrapPanel Margin="10" HorizontalAlignment="Center">
+                    <Image Name="Photo">
+                        <Image.Clip>
+                            <EllipseGeometry RadiusX="60" RadiusY="60" Center="190 60"/>
+                        </Image.Clip>
+                    </Image>
+                </WrapPanel>
+            </StackPanel>
+            <StackPanel Grid.Row = "0">
+                <WrapPanel Margin="10" HorizontalAlignment="Center">
+                    <Button Margin="260 120 0 0" Width="71" Background="Transparent" Click="LoadPicture_Click" Content="Load" FontFamily="Arial"/>
+                </WrapPanel>
+            </StackPanel>
 
             <StackPanel Grid.Row="1" Margin="30 0">
-                <TextBlock Text="Name"/>
+                <TextBlock Text="Name" FontFamily="Arial"/>
                 <TextBox x:Name="Name" Background="Transparent" BorderBrush="#FFCDE4F9"/>
             </StackPanel>
             <StackPanel Grid.Row="2" Margin="30 0">
-                <TextBlock Text="Email"/>
+                <TextBlock Text="Email" FontFamily="Arial"/>
                 <TextBox x:Name="Email" Background="Transparent" BorderBrush="#FFCDE4F9"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Margin="30 0">
-                <TextBlock Text="Phone"/>
+                <TextBlock Text="Phone" FontFamily="Arial"/>
                 <TextBox x:Name="Phone" Background="Transparent" BorderBrush="#FFCDE4F9"/>
             </StackPanel>
-            <StackPanel x:Name="Password" Grid.Row="3" Margin="30,61.6,30,0" Grid.RowSpan="4">
+            <StackPanel x:Name="Password" Grid.Row="3" Margin="30,39.8,30,21.6" Grid.RowSpan="4">
                 <TextBlock Text="Password" FontFamily="Arial" Margin="0,0,-0.4,0"/>
-                <PasswordBox x:Name="PasswordBox" BorderBrush="#FFCDE4F9" FontFamily="Arial"/>
+                <PasswordBox x:Name="PasswordBox" BorderBrush="#FFCDE4F9" Background="Transparent" FontFamily="Arial"/>
                 <TextBox x:Name="passwordTxtBox" Visibility="Collapsed" FontFamily="Arial"/>
                 <CheckBox x:Name="Check_Password" Content="Show Password"
                           Unchecked="ShowPassword_Unchecked"  Checked="ShowPassword_Checked" IsChecked="False" Height="14" FontFamily="Arial"/>
             </StackPanel>
-
-            <Button x:Name="Payment" Grid.Row="4" Content="Payment" VerticalAlignment="Top" Padding="0 10" Margin="30,78.8,30,0" Background="#FFCDE4F9" Grid.RowSpan="2"/>
-            <Button x:Name="Back" Grid.Row="6" Content="Back" VerticalAlignment="Top" Padding="0 10" Margin="30 0" Background="#FFCDE4F9" Click="Back_Click"/>
+            <Button x:Name="Payment" Grid.Row="4" Content="Payment" VerticalAlignment="Top" Padding="0 10" Margin="30,64.8,30,0" Background="Transparent" Grid.RowSpan="2" FontFamily="Arial"/>
+            <Button x:Name="Back" Grid.Row="5" Content="Back" VerticalAlignment="Top" Padding="0 10" Margin="30,37.6,30,0" Background="Transparent" Click="Back_Click" Grid.RowSpan="2" FontFamily="Arial"/>
         </Grid>
     </Grid>
 </Window>

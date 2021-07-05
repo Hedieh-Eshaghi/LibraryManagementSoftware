@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-          Title="MainWindow" Height="500" Width="400" WindowStyle="None" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" >
+          Title="Library" Height="500" Width="400" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" >
     <Window.Background>
         <ImageBrush ImageSource="Login.jpg"/>
     </Window.Background>
